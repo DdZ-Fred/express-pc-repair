@@ -7,7 +7,6 @@ import jade from 'jade';
 import morgan from 'morgan';
 
 import routes from './routes/index';
-import users from './routes/users';
 
 const app = express();
 
