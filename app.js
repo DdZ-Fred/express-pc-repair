@@ -10,6 +10,8 @@ import routes from './routes/index';
 import services from './routes/services';
 import contact from './routes/contact';
 
+import env from './env';
+
 const app = express();
 
 // View Engine config
