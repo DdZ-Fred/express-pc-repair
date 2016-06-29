@@ -2,11 +2,13 @@ import express from 'express';
 import path from 'path';
 import bodyParser from 'body-parser';
 import engines from 'consolidate';
-// import hbs from 'handlebars';
 import jade from 'jade';
 import morgan from 'morgan';
+import nodemailer from 'nodemailer';
 
 import routes from './routes/index';
+import services from './routes/services';
+import contact from './routes/contact';
 
 const app = express();
 
@@ -26,6 +28,8 @@ app.use(bodyParser.urlencoded({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/services', services);
+app.use('/contact', contact);
 
 
 const PORT = process.env.PORT || 3000;

@@ -1,4 +1,5 @@
 import express from 'express';
+import fs from 'fs';
 
 const router = express.Router();
 
@@ -11,12 +12,6 @@ router.get('/', (req, res) => {
 router.get('/about', (req, res) => {
   res.render('about', {
     title: 'About',
-  });
-});
-
-router.get('/services', (req, res) => {
-  res.render('services', {
-    title: 'Services',
   });
 });
 

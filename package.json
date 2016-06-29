@@ -1,7 +1,7 @@
 {
   "name": "express-pc-repair",
   "version": "1.0.0",
-  "engines" : {
+  "engines": {
     "node": "6.2.2"
   },
   "description": "",
@@ -26,6 +26,7 @@
     "babel-cli": "^6.10.1",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-stage-2": "^6.11.0",
+    "envalid": "^2.2.0",
     "eslint": "^2.13.1",
     "eslint-config-airbnb-base": "^3.0.1",
     "eslint-plugin-import": "^1.9.2"
@@ -36,6 +37,7 @@
     "express": "^4.14.0",
     "handlebars": "^4.0.5",
     "jade": "^1.11.0",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "nodemailer": "^2.4.2"
   }
 }
